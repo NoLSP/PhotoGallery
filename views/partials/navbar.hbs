@@ -1,0 +1,34 @@
+<nav class="blue darken-4">
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo right">Photo Gallery</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+
+        {{#if isGallery}}
+            <li class="active"><a href="/">Gallery</a></li>
+        {{else}}
+            <li><a href="/">Gallery</a></li>
+        {{/if}}
+
+        {{#if isAddPhoto}}
+            <li class="active"><a href="/addphoto">Add Photo</a></li>
+        {{else}}
+            <li><a href="/addphoto">Add Photo</a></li>
+        {{/if}}
+
+        {{#if isSignin}}
+            <li class="active"><a href="/signin">Sign In</a></li>
+        {{else}}
+            <li><a href="/signin">Sign In</a></li>
+        {{/if}}
+
+        {{#if isSignup}}
+            <li class="active"><a href="/signup">Sign Up</a></li>
+        {{else}}
+            <li><a href="/signup">Sign Up</a></li>
+        {{/if}}
+        
+        <li><a href="/logout">Log Out</a></li>
+
+      </ul>
+    </div>
+  </nav>

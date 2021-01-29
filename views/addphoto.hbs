@@ -1,0 +1,26 @@
+<h2>Add your image</h2>
+
+    <div class="mt-3">
+
+        <form method="POST" enctype="multipart/form-data">
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Enter image name</label>
+                <input id="input_text" type="text" data-length="10" name="title" class="form-control" placeholder="photo_001" maxlength="20" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Image description</label>
+                <input id="textarea2" class="form-control" id="exampleFormControlInput1" name="description" placeholder="cool image" maxlength="50" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Add image</label>
+                <input class="form-control" style="margin: 16px;" type="file" id="formFile" accept="image/png, image/jpeg" name="image" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Add</button>
+
+        </form>
+
+    </div>
