@@ -1,3 +1,15 @@
+<script>
+    function launchFullScreen(id) {
+        const element = document.getElementById(id);
+        if(element.requestFullScreen) {
+            element.requestFullScreen();
+        } else if(element.mozRequestFullScreen) {
+            element.mozRequestFullScreen();
+        } else if(element.webkitRequestFullScreen) {
+            element.webkitRequestFullScreen();
+   }
+}
+</script>
 <h2>Gallery Page</h2>
 
 <div class="album py-5 bg-light">
@@ -16,7 +28,7 @@
                                     <span class="card-title">{{ title }}</span>
                                 </div>
                                 <div class="card-image">
-                                    <img src= {{ image }} ">
+                                    <img id="{{ image }}" src=" {{ image }} " onclick=launchFullScreen("{{ image }}")>
                                 </div>
                                 <div class="card-content">
                                     <p>Description: {{ description }}</p>
